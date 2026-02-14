@@ -3,7 +3,7 @@ set -euo pipefail
 
 IMAGE_NAME="agentbox"
 CONTAINER_NAME="agentbox"
-MEMORY_LIMIT="4g"
+MEMORY_LIMIT="8g"
 WORKSPACE_DIR="$(cd "$(dirname "$0")" && pwd)/workspace"
 
 # Check Docker is running
