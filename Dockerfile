@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y \
     sudo \
     unzip \
     xz-utils \
+    tmux \
     && rm -rf /var/lib/apt/lists/*
 
 # Install GitHub CLI
@@ -42,4 +43,4 @@ WORKDIR /workspace
 
 SHELL ["/usr/bin/fish", "-c"]
 
-CMD ["fish"]
+CMD ["tail", "-f", "/dev/null"]
